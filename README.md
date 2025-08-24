@@ -1,4 +1,4 @@
-# EEG Network Analysis in Julia
+# EEG Network Analysis in Julia (Julia translation of Maryam Rahimi's code)
 
 This project provides a Julia-based toolkit for the analysis of EEG (Electroencephalography) data through the lens of complex network theory. 
 This is based entirely on Maryam Rahimi's Python toolkit, so credit goes to her. I have only translted this to Julia.
