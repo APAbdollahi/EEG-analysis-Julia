@@ -41,3 +41,24 @@ Follow these steps to set up the project environment.
 ```bash
 git clone <your-repository-url>
 cd <repository-directory>
+```
+**2. Install Packages**
+Open the Julia REPL (command line) and run the single code block below. This will install the IJulia kernel (for Jupyter) and all the necessary packages for data handling, signal processing, and network analysis.
+```bash
+using Pkg
+Pkg.add(["IJulia", "EDF", "DataFrames", "Statistics", "CSV", "LinearAlgebra", "MultipleTesting", "HypothesisTests", "DSP", "Graphs", "XLSX"])
+```
+
+**3. Place Your Data**
+
+The script is configured to read data from a specific directory.
+
+    Create a directory (e.g., data/) in the project folder.
+
+    Place your EEG .edf or binary .dat files inside this directory.
+
+    You must update the file paths inside the EEG_Analysis.ipynb notebook to point to your data files. 
+
+    Look for variables like edf_filepath and directory.
+
+
